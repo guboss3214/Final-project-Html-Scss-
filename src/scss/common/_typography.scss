@@ -1,0 +1,39 @@
+@use "../presets/" as *;
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+html{
+    overflow-y: scroll;
+    font-family: $fotnt-family;
+    font-size: $font-size;
+}
+
+body{
+    color: $color-gray;
+    background-color: $color-white;
+}
+
+a{
+    text-decoration: none;
+    color: $color-white;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    font-family: $font-header;
+    font-size: 3.75rem;
+    font-weight: 300;
+    line-height: 1.2em;
+    letter-spacing: 0.078em;
+}
+
+h2{
+    font-family: $font-header;
+}
