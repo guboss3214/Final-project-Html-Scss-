@@ -10,10 +10,6 @@
         @include unlist(0 (-$gap-sm) 0 0);
     }
 
-    &__item{
-
-    }
-
     &__link{
         display: block;
         font-size: 1.125rem;
@@ -23,9 +19,23 @@
         &:focus{
             color: $color-accent;
         }
+        @media (max-width: $xs) {
+            display: none;
+        }
     }
 
     &__btn{
         display: none;
+        @media (max-width: $xs) {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: end;
+        }
+        &-row{
+            height: 2px;
+            width: 24px;
+            background-color: $color-white;
+        }
     }
 }

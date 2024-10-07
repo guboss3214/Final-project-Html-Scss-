@@ -16,4 +16,12 @@
     &:focus{
         background-color: $color-accent;
     }
+    @media (max-width: $sm) {
+        min-width: 200px;
+        min-height: 50px;  
+    }
+    @media (max-width: $xs) {
+        min-width: 170px;
+        min-height: 40px; 
+    }
 }

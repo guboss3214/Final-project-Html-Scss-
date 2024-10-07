@@ -9,6 +9,10 @@
     z-index: 2;
 
     padding: $gap 0;
+
+    @media (max-width: $xs) {
+        background-color: rgba($header-color, $alpha: 0.1);
+    }
     &__container {
         display: grid;
         align-items: center;
