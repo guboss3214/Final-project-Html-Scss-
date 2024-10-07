@@ -15,6 +15,7 @@
         font-size: 1.125rem;
         padding: $gap $gap-sm;
         letter-spacing: 0.09em;
+        transition: color 0.3s;
         &:hover,
         &:focus{
             color: $color-accent;
@@ -26,16 +27,6 @@
 
     &__btn{
         display: none;
-        @media (max-width: $xs) {
-            display: flex;
-            flex-direction: column;
-            gap: 6px;
-            align-items: end;
-        }
-        &-row{
-            height: 2px;
-            width: 24px;
-            background-color: $color-white;
-        }
+
     }
 }

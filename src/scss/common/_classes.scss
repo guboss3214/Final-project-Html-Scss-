@@ -1,6 +1,10 @@
 @use "../presets/" as *;
 @use "../mixins/" as *;
 
+.visually-hidden{
+    @include visually-hidden;
+}
+
 .btn{
     display: flex;
     align-items: center;
@@ -12,6 +16,7 @@
     padding: 0.5em 1em;
     min-width: 250px;
     min-height: 60px;
+    transition: background-color 0.3s;
     &:hover,
     &:focus{
         background-color: $color-accent;
@@ -23,5 +28,12 @@
     @media (max-width: $xs) {
         min-width: 170px;
         min-height: 40px; 
+    }
+
+    &--primary{
+        background-color: $color-primary;
+        min-height: 60px;
+        min-width: 350px;
+        background-color: rgba($color-primary, 0.8);
     }
 }
