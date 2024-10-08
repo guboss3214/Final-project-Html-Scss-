@@ -1,0 +1,18 @@
+@use '../mixins/' as *;
+@use '../presets/' as *;
+
+.subscribe {
+    background-color: $color-primary;
+    padding: $gap-lg 0;
+
+    &__container {
+        @extend %container;
+    }
+
+    &__form{
+        display: grid;
+        gap: $gap;
+        grid-template-columns: repeat(3,420px);
+    }
+    
+}
