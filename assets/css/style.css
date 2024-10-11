@@ -704,6 +704,126 @@ h2 {
 .subscribe-item__btn:hover {
   background-color: #ff5f1f;
 }
+.posts__container {
+  width: min(100% - 40px, 1300px);
+
+  margin-inline: auto;
+}
+.posts__title {
+  margin-bottom: 50px;
+
+  letter-spacing: 0.1em;
+
+  color: #2d3651;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.posts__grid {
+  display: grid;
+
+  gap: 20px;
+  grid-template-areas: "g1 g1 g2 g3" "g4 g5 g6 g6";
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.posts__grid :nth-child(1) {
+  grid-area: g1;
+}
+
+.posts__grid :nth-child(2) {
+  grid-area: g2;
+}
+
+.posts__grid :nth-child(3) {
+  grid-area: g3;
+}
+
+.posts__grid :nth-child(4) {
+  grid-area: g4;
+}
+
+.posts__grid :nth-child(5) {
+  grid-area: g5;
+}
+
+.posts__grid :nth-child(6) {
+  grid-area: g6;
+}
+
+.posts__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  margin-top: 20px;
+}
+
+.post-item {
+  background-color: #eeeeee;
+}
+
+.post-item:hover {
+  background-color: #e2dfdf;
+}
+
+.post-item:hover a {
+  color: #2d3651;
+}
+
+.post-item:hover img {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.post-item__link {
+  display: block;
+
+  height: 100%;
+}
+
+.post-item__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+
+  height: 300px;
+}
+
+.post-item__image {
+  display: block;
+
+  width: 100%;
+
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: -webkit-transform 0.3s;
+          transition:         transform 0.3s;
+          transition:         transform 0.3s, -webkit-transform 0.3s;
+
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.post-item__title {
+  margin: 0;
+}
+
+.post-item__text {
+  height: 250px;
+  padding: 40px 20px;
+
+  text-align: center;
+
+  color: #637588;
+
+  line-height: 1.25;
+}
 
 @media (min-width: 1200px) {
   .about {
@@ -713,6 +833,10 @@ h2 {
   .about__container {
     gap: 100px;
     grid-template-columns: 1fr 271px;
+  }
+  .posts {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
 
@@ -724,6 +848,10 @@ h2 {
   .about__container {
     gap: 60px;
     grid-template-columns: 1fr 255px;
+  }
+  .posts {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -744,6 +872,10 @@ h2 {
   }
   .about__container {
     gap: 40px;
+  }
+  .posts {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 
