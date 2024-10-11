@@ -19,7 +19,7 @@
         letter-spacing: 0.1em;
         font-size: 1.25rem;
         transition: color 0.3s;
-        @media (max-width: $xxs) {
+        @media (max-width: $sm) {
             font-size: 1.125rem;
         }
     }

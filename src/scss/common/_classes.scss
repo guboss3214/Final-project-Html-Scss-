@@ -21,7 +21,7 @@
     &:focus{
         background-color: $color-accent;
     }
-    @media (max-width: $sm) {
+    @media (max-width: $md) {
         min-width: 200px;
         min-height: 50px;  
     }
