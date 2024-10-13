@@ -20,6 +20,19 @@
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: "g1 g1 g2 g3" "g4 g5 g6 g6";
+        @media (max-width: $md) {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "g1 g1 g2" "g3 g4 g4" "g5 g5 g6";
+        }
+        @media (max-width: $xs) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas: "g1 g2" "g3 g4" "g5 g6";
+        }
+        @media (max-width: $sm) {
+            gap: $gap;
+            grid-template-areas: "g1" "g2" "g3" "g4" "g5" "g6" "g7" "g8" "g9";
+            grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+        }
         gap: $gap;
         :nth-child(1){
             grid-area: g1;
@@ -42,8 +55,13 @@
         
     }
     &__btn{
-        margin-top: 20px;
+        margin-top: 1em;
         display: flex;
         justify-content: center;
+        @media (max-width: $sm) {
+            >a{
+                width: 100%;
+            }
+        }
     }
 }

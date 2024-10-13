@@ -21,19 +21,17 @@
     &:focus{
         background-color: $color-accent;
     }
-    @media (max-width: $md) {
-        min-width: 200px;
-        min-height: 50px;  
-    }
-    @media (max-width: $xs) {
-        min-width: 170px;
-        min-height: 40px; 
-    }
+    
 
     &--primary{
         background-color: $color-primary;
         min-height: 60px;
         min-width: 350px;
         background-color: rgba($color-primary, 0.8);
+    }
+    @media (max-width: $md) {
+        &--custom{
+            background-color: $color-accent;
+        }
     }
 }

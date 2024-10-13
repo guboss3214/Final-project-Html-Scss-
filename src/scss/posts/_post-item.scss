@@ -42,9 +42,8 @@ $local-color-hover: #e2dfdf;
 
         height: 250px;
         padding: $gap-lg $gap;
-
+        overflow: hidden;
         text-align: center;
-
         line-height: 1.25;
     }
 }

@@ -9,6 +9,7 @@
     &__container{
         @extend %container;
         display: grid;
+        grid-auto-flow: column;
         @include lg-min {
             gap: $gap-x5;
             grid-template-columns: 1fr 271px;
@@ -19,6 +20,9 @@
         }
         @include md {
             gap: $gap-x2;
+        }
+        @media (max-width: $sm) {
+            grid-auto-flow: row;
         }
     }
     &__title{

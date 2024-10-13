@@ -12,7 +12,16 @@
     &__form{
         display: grid;
         gap: $gap;
-        grid-template-columns: repeat(3,420px);
+        grid-auto-flow: column;
+        grid-template-columns: repeat(3, 1fr);
+        @media (max-width: $xs) {
+            grid-template-columns: repeat(2, 1fr);
+            grid-auto-flow: row;
+        }
+        @media (max-width: $sm) {
+            grid-template-rows: repeat(3, 1fr);
+            grid-auto-flow: row;
+        }
     }
     
 }

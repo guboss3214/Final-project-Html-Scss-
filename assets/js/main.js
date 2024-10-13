@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
   btn.addEventListener('click', () => {
     btn.classList.toggle('header-navbar__btn--active');
 
-    if (btn.classList.contains('header-navbar__btn--buttons')) {
+    if (btn.classList.contains('header-navbar__btn--active')) {
       list.classList.add('animate__flipInX');
       list.classList.remove('animate__flipOutX');
     } else {
