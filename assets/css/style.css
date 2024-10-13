@@ -966,6 +966,12 @@ h2 {
   .btn--custom {
     background-color: #ff5f1f;
   }
+  .header-content .btn {
+    min-width: 200px;
+    min-height: 50px;
+
+    font-size: 1em;
+  }
   .skills__container {
     grid-template-areas: "a1 a1 a2" "a3 a4 a4" "a5 a5 a6" "a7 a8 a6" "a7 a9 a9";
     grid-template-columns: repeat(3, 1fr);
@@ -1038,6 +1044,10 @@ h2 {
 }
 
 @media (max-width: 576px) {
+  .header-content .btn {
+    min-width: 170px;
+    min-height: 40px;
+  }
   .skills__container {
     grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7" "a8" "a9";
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
