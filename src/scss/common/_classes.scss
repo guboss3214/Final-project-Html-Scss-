@@ -21,8 +21,10 @@
     &:focus{
         background-color: $color-accent;
     }
-    
+    @media (max-width: $md){
+        font-size: 1em;
 
+    }
     &--primary{
         background-color: $color-primary;
         min-height: 60px;
@@ -33,18 +35,5 @@
         &--custom{
             background-color: $color-accent;
         }
-    }
-}
-
-.header-content .btn{
-    @media (max-width: $md){
-        font-size: 1em;
-        min-height: 50px;
-        min-width: 200px;
-
-    }
-    @media (max-width: $sm){
-        min-height: 40px;
-        min-width: 170px;
     }
 }
