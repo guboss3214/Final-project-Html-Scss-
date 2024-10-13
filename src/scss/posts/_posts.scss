@@ -33,7 +33,6 @@
             grid-template-areas: "g1" "g2" "g3" "g4" "g5" "g6" "g7" "g8" "g9";
             grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
         }
-        gap: $gap;
         :nth-child(1){
             grid-area: g1;
         }
