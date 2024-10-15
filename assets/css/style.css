@@ -627,10 +627,9 @@ h2 {
   position: relative;
 }
 
-.about__descriptionp {
+.about__description p {
   font-size: 1.125rem;
 }
-
 .about__description::before {
   position: absolute;
   top: 5px;
@@ -1029,6 +1028,9 @@ h2 {
   .skills__container {
     grid-template-areas: "a1 a2" "a3 a2" "a4 a4" "a5 a6" "a5 a7" "a8 a9";
     grid-template-columns: repeat(2, 1fr);
+  }
+  .about__description p {
+    font-size: 1rem;
   }
   .subscribe__form {
     grid-auto-flow: row;
