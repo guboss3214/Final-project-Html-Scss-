@@ -32,6 +32,7 @@
         letter-spacing: 0.1em;
     }
     &__description{
+        position: relative;
         & p{
             font-size: 1.125rem;
             @media (max-width: $xs) {

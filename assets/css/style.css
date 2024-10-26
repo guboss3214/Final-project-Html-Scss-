@@ -623,6 +623,10 @@ h2 {
   font-weight: bold;
 }
 
+.about__description {
+  position: relative;
+}
+
 .about__description p {
   font-size: 1.125rem;
 }
