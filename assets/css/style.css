@@ -623,10 +623,6 @@ h2 {
   font-weight: bold;
 }
 
-.about__description {
-  position: relative;
-}
-
 .about__description p {
   font-size: 1.125rem;
 }
@@ -779,6 +775,7 @@ h2 {
 .posts__grid {
   display: grid;
 
+  gap: 20px;
   grid-template-areas: "g1 g1 g2 g3" "g4 g5 g6 g6";
   grid-template-columns: repeat(4, 1fr);
 }
